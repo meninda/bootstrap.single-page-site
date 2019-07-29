@@ -68,15 +68,15 @@
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #d58;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color:  #d580ff;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color:  #d580ff;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid  #d580ff;
   }
 }
 
@@ -144,27 +144,27 @@
 }
 
 .btn-primary {
-  background-color: #64a19d;
+  background-color:  #d580ff;
 }
 
 .btn-primary:hover {
-  background-color: #4f837f;
+  background-color: #d580ff;
 }
 
 .btn-primary:focus {
-  background-color: #4f837f;
+  background-color:  #d580ff;
   color: white;
 }
 
 .btn-primary:active {
-  background-color: #467370 !important;
+  background-color:  #d580ff!important;
 }
 
 .about-section {
   padding-top: 10rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
-}
+  background-color: #ff1a75;
+  /*background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);*/
+} 
 
 .about-section p {
   margin-bottom: 5rem;
@@ -181,7 +181,7 @@
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid  #d580ff;
   }
 }
 
@@ -195,7 +195,7 @@
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color:  #d580ff;
     border-width: .25rem;
     width: 30%;
   }
@@ -229,7 +229,7 @@
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid  #d580ff;
 }
 
 .contact-section .card h4 {
@@ -240,7 +240,7 @@
 }
 
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #d580ff;
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -273,12 +273,12 @@ body {
 }
 
 a {
-  color: #64a19d;
+  color:  #d580ff;
 }
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #3c6360;
+  color:  #d580ff;
 }
 
 .bg-black {
@@ -286,7 +286,7 @@ a:focus, a:hover {
 }
 
 .bg-primary {
-  background-color: #64a19d !important;
+  background-color:  #d580ff!important;
 }
 
 .text-primary {
