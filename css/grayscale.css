@@ -472,7 +472,7 @@ input[type=submit]:hover {
   line-height: 2 ;
 }
 .registerbtn {
-  background-color: black
+  background-color: black;
   color: white;
   padding: 16px 20px;
   margin: 4px 0;
