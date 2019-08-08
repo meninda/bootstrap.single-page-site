@@ -2,6 +2,13 @@
   min-height: 56px;
   background-color: #fff;
 }
+.container {
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 0px;
+    max-width: 100%;
+    margin-right: 0px;
+}
 
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -78,7 +85,9 @@
     outline: none;
     border-bottom: 0.25rem solid  #d580ff;
   }
-}
+ #destiny {
+display: inline-block;
+  }
 
 .masthead {
   position: relative;
@@ -92,6 +101,7 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
 }
 
 .masthead h1 {
