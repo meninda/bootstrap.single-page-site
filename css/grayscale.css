@@ -80,7 +80,7 @@
   #mainNav.navbar-shrink .nav-link:active {
     color:  #d580ff;
   }
-  #mainNav.navbar-shrink .nav-link.active {
+  #mainNav.navbar-shrink .nav-link.active   {
     color:  #d580ff;
     outline: none;
     border-bottom: 0.25rem solid  #d580ff;
