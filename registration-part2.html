@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+
+    .blank {
+      border-color: black;
+    }
+
+    textarea {
+      border-color: black;
+    }
+
+    input[type=text],
+    .signature {
+      border: none;
+      border-bottom: 1px solid black;
+      background-color: transparent;
+      color: black;
+      outline: none;
+      border-radius: 0px !important;
+      width: 50% !important;
+    }
+
+    input[type=text],
+    .signature:focus {
+      border: none;
+      border-bottom: 1px solid black;
+      background-color: transparent;
+      color: black;
+      outline: none;
+      border-radius: 0px !important;
+      width: 50% !important;
+    }
+
+    subject {
+      border-colors: black;
+    }
+
+    input[type=submit] {
+      background-color: #ffffff;
+      color: black;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor opacity: 0.8;
+      : pointer;
+      float: right;
+    }
+
+    input[type=submit]:hover {
+      opacity: 0.7;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #ff3686;
+      padding: 20px;
+    }
+
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+
+    /* Clear floats after the columns */
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+    @media screen and (max-width: 600px) {
+      .col-25,
+      .col-75,
+      input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <form action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+        </div>
+        <div class="col-75">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+        </div>
+        <div class="col-75">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+        </div>
+        <div class="col-75">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <b>
+            <label for="subject">How will you make a positive contribution to MSK and your community?</label>
+          </b>
+        </div>
+        <div class="col-75">
+          <b>
+            <textarea id="subject" name="How will you make a positive contribution to MSK and your community?" placeholder="Write something.."
+              style="height:200px">      </textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Please list your hobbies and interests:</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="Please list your hobbies and interests:" placeholder="Write something.." style="height:200px">       </textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">What are your strengths?</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="What are your strengths?" placeholder="Write something.." style="height:200px">       </textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">List three or more leadership skills you would like to develop:</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="List three or more leadership skills you would like to develop:" placeholder="Write something.."
+            style="height:200px">       </textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="tab">
+          <b>Signatures</b>
+          <p>
+            <input type="text" class="signature" placeholder="Participant Signature" oninput="this.className = ''" name="ps">
+          </p>
+          <p>
+            <input type="text" class="signature" placeholder="Parent/Guardian Signature" oninput="this.className = ''" name="pgs">
+          </p>
+        </div>
+      </div>
+      <div class="container" id="blank">
+        <label for="cm">I,
+          <input class="blank" placeholder="" oninput="this.className = ''" name="lga">
+          <label for="cm">as the parent/legal guardian/person responsible give my permission for </label>
+          <input placeholder="" oninput="this.className = ''"
+            name="lga">
+          <label for="cm">to participate in all of the normal activities (academic, tutoring, vocational, field trips, workshops, etc.) of
+            the My Sister’s Keeper Rites of Passage program. I understand that these activities will include transportation
+            to and from the My Sister’s Keeper Rites of Passage Program workshops and field trips. I, on behalf of myself,
+            my guests, my spouse, my children, my parents, my heirs, assigns, personal representatives, estate, and insurers,
+            by signing below, hereby agree to release, indemnify and defend I Am My Sister’s Keeper-Rites of Passage, its
+            trustees, employees, and agents from any liability that may arise from my son/daughter’s participation in any
+            and all instructional activities associated with the My Sister’s Keeper Rites of Passage Program. I hereby give
+            my consent for my daughter’s participation in the above-mentioned activities. permission for </label>
+        </label>
+        <p>
+          </label>
+        </p>
+        <div class="tab">
+          <b>Signatures</b>
+          <p>
+            <input type="text" class="signature" placeholder="Participant Signature" oninput="this.className = ''" name="ps">
+          </p>
+          <p>
+            <input type="text" class="signature" placeholder="Parent/Guardian Signature" oninput="this.className = ''" name="pgs">
+          </p>
+          <input type="submit" value="Submit">
+        </div>
+
+</body>
+
+</html>
