@@ -1,3 +1,485 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  h1 {
+    color: black;
+    font-family: Georgia
+  }
+
+  body {
+    background-color: #f1f1f1;
+  }
+
+  #regForm {
+    background-color: #33ff33;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+
+  /* Mark input boxes that gets an error on validation: */
+
+  input.invalid {
+    background-color: #ffdddd;
+  }
+
+  /* Hide all steps by default: */
+
+  .tab {
+    display: none;
+  }
+
+  button {
+    background-color: white;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    border-color: black;
+  }
+
+  button:hover {
+    opacity: 0.7;
+
+  }
+
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+
+  /* Make circles that indicate the steps of the form: */
+
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+
+  input {
+    border-color: black;
+  }
+
+textarea {
+  height: 207px;
+    margin: 0px;
+    width: 982px;
+}
+  .step.active {
+    opacity: 1;
+  }
+
+  /* Mark the steps that are finished and valid: */
+
+  .step.finish {
+    background-color: rgb(255, 255, 255);
+  }
+</style>
+
+<body>
+
+  <form id="regForm" action="/action_page.php">
+    <h1>Edge Program
+    </h1>
+    <!-- One "tab" for each step in the form: -->
+    <div class="tab">
+      <p>
+        <input placeholder="First And Last Name" oninput="this.className = ''" name="name">
+      </p>
+      <p>
+        <input placeholder="Date Of Birth" oninput="this.className = ''" name="dob">
+        <p>
+          <input placeholder="Telphone #" oninput="this.className = ''" name="telp#">
+        </p>
+        <p>
+          <input placeholder="Address" oninput="this.className = ''" name="email">
+        </p>
+        <p>
+          <input placeholder="City" oninput="this.className = ''" name="phone">
+        </p>
+        <p>
+          <input placeholder="State" oninput="this.className = ''" name="email">
+        </p>
+        <p>
+          <input placeholder="Zipcode" oninput="this.className = ''" name="phone">
+        </p>
+    </div>
+
+    <div class="tab">
+      <p>
+        <input placeholder="Last School Attended" oninput="this.className = ''" name="lsa">
+      </p>
+      <p>
+        <input placeholder="Last Grade Attended" oninput="this.className = ''" name="lga">
+      </p>
+    </div>
+
+    <div class="tab">
+      <p>
+        <input placeholder="Parent/Guardian" oninput="this.className = ''" name="p/s">
+      </p>
+      <p>
+        <input placeholder="Relationship" oninput="this.className = ''" name="rs">
+      </p>
+      <p>
+        <input placeholder="E-Address" oninput="this.className = ''" name="ea">
+      </p>
+    </div>
+
+    <div class="tab">
+      <b>Ethnic Background:</b>
+      <input type="radio" name="gender" value="male">Black
+      <br>
+      <input type="radio" name="gender" value="female">American Indian or Alaskan Native
+      <br>
+      <input type="radio" name="gender" value="other">Hispanic
+      <br>
+      <br>
+      <input type="radio" name="gender" value="male">White, other than Hispanic
+      <br>
+      <input type="radio" name="gender" value="female">Asian or Pacific Island
+      <br>
+      <input type="radio" name="gender" value="other">Other
+      <br>
+      <br>
+    </div>
+    </div>
+
+
+    <div class="tab">
+      <b> Sweatshirt Sizes: </b>
+      <input type="radio" name="gender" value="s">S
+      <input type="radio" name="gender" value="m">M
+
+
+      <input type="radio" name="gender" value="l">L
+      <input type="radio" name="gender" value="xl">XL
+      <input type="radio" name="gender" value="1x">1X
+      <input type="radio" name="gender" value="2x">2X
+      <input type="radio" name="gender" value="3x">3X
+    </div>
+
+
+    <div class="tab">
+      <b> T-Shirt Sizes: </b>
+      <input type="radio" name="gender" value="s">S
+      <input type="radio" name="gender" value="m">M
+      <input type="radio" name="gender" value="l">L
+      <input type="radio" name="gender" value="xl">XL
+      <input type="radio" name="gender" value="1x">1X
+      <input type="radio" name="gender" value="2x">2X
+      <input type="radio" name="gender" value="3x">3X
+    </div>
+
+
+    <div class="tab">
+      <b>Employment History:</b>
+      <p>
+        <input placeholder="Employer/Volunteer/Community Service" oninput="this.className = ''" name="lsa">
+      </p>
+      <p>
+        <input placeholder="Start Date" oninput="this.className = ''" name="lga">
+      </p>
+      <p>
+        <input placeholder="Job Title" oninput="this.className = ''" name="lsa">
+      </p>
+      <p>
+        <input placeholder="End Date" oninput="this.className = ''" name="lga">
+      </p>
+      <p>
+        <input placeholder="Reason" oninput="this.className = ''" name="lga">
+      </p>
+    </div>
+
+    <div class="tab">
+      <b>Emergency Contact Information:</b>
+      <p>
+        <input placeholder="Emergency Contact Person" oninput="this.className = ''" name="lsa">
+      </p>
+      <p>
+        <input placeholder="Address" oninput="this.className = ''" name="lga">
+      </p>
+      <p>
+        <input placeholder="Relationship to Participant" oninput="this.className = ''" name="lsa">
+      </p>
+      <p>
+        <input placeholder="Contact Phone Number" oninput="this.className = ''" name="lga">
+      </p>
+      <p>
+        <input placeholder="Alternate number" oninput="this.className = ''" name="lga">
+      </p>
+    </div>
+
+    <div class="tab">
+      <b>Health Information:</b>
+      <br>
+      <label for="cm">Are you currently taking any medications?</label>
+      <input type="radio" name="med" value="s">yes
+      <input type="radio" name="med" value="m">no
+      <p>
+        <input placeholder="If Yes, Please List Medication(s)/If No, Type N/A" oninput="this.className = ''" name="lm">
+      </p>
+      <br>
+      <label for="cm">Have you ever been hospitalized?</label>
+      <input type="radio" name="hospitalized" value="s">yes
+      <input type="radio" name="hospitalizedz" value="m">no
+      <p>
+        <input placeholder="If Yes, Please List Reason(s)/If No, Type N/A" oninput="this.className = ''" name="lm">
+      </p>
+      <br>
+      <label for="cm">Are you allergic to anything?</label>
+      <input type="radio" name="allergic" value="s">yes
+      <input type="radio" name="allergic" value="m">no
+      <p>
+        <input placeholder="If Yes, Please List Allergy(s)/If No, Type N/A" oninput="this.className = ''" name="lm">
+      </p>
+    </div>
+
+    <div class="tab">
+      <b>Signatures</b>
+      <p>
+        <input placeholder="Participant Signature" oninput="this.className = ''" name="ps">
+      </p>
+      <p>
+        <input placeholder="Parent/Guardian Signature" oninput="this.className = ''" name="pgs">
+      </p>
+      <p>
+        <input placeholder="Date" oninput="this.className = ''" name="ps">
+      </p>
+    </div>
+
+
+    <div class="tab">
+      <div class="col-25">
+        <b>
+          <label for="subject">How will you make a positive contribution to MSK and your community?</label>
+        </b>
+      </div>
+      <div class="col-75">
+        <b>
+          <textarea id="subject" name="How will you make a positive contribution to MSK and your community?" placeholder="Write something.."
+            style="height:200px">      </textarea>
+      </div>
+
+      <div class="col-25">
+        <label for="subject">Please list your hobbies and interests:</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="Please list your hobbies and interests:" placeholder="Write something.." style="height:200px">       </textarea>
+      </div>
+
+
+
+
+      <div class="col-25">
+        <label for="subject">What are your strengths?</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="What are your strengths?" placeholder="Write something.." style="height:200px">       </textarea>
+      </div>
+
+
+
+      <div class="col-25">
+        <label for="subject">List three or more leadership skills you would like to develop:</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="List three or more leadership skills you would like to develop:" placeholder="Write something.."
+          style="height:200px">       </textarea>
+      </div>
+    
+
+
+
+
+
+    <div class="">
+      <b>Signatures</b>
+      <p>
+        <input type="text" class="signature" placeholder="Participant Signature" oninput="this.className = ''" name="ps">
+      </p>
+      <p>
+        <input type="text" class="signature" placeholder="Parent/Guardian Signature" oninput="this.className = ''" name="pgs">
+      </p>
+    </div>
+    <div class="container" id="blank">
+      <label for="cm">I,
+        <input class="blank" placeholder="" oninput="this.className = ''" name="lga">
+        <label for="cm">as the parent/legal guardian/person responsible give my permission for </label>
+        <input placeholder="" oninput="this.className = ''" name="lga">
+        <label for="cm">to participate in all of the normal activities (academic, tutoring, vocational, field trips, workshops, etc.) of
+          the My Sister’s Keeper Rites of Passage program. I understand that these activities will include transportation
+          to and from the My Sister’s Keeper Rites of Passage Program workshops and field trips. I, on behalf of myself,
+          my guests, my spouse, my children, my parents, my heirs, assigns, personal representatives, estate, and insurers,
+          by signing below, hereby agree to release, indemnify and defend I Am My Sister’s Keeper-Rites of Passage, its trustees,
+          employees, and agents from any liability that may arise from my son/daughter’s participation in any and all instructional
+          activities associated with the My Sister’s Keeper Rites of Passage Program. I hereby give my consent for my daughter’s
+          participation in the above-mentioned activities. permission for </label>
+      </label>
+
+        <b>Signatures</b>
+        <p>
+          <input type="text" class="signature" placeholder="Participant Signature" oninput="this.className = ''" name="ps">
+        </p>
+        <p>
+          <input type="text" class="signature" placeholder="Parent/Guardian Signature" oninput="this.className = ''" name="pgs">
+        </p>
+
+</div>
+    </div>
+
+
+    <div style="overflow:auto;">
+      <div style="float:right;">
+        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      </div>
+    </div>
+    <!-- Circles which indicates the steps of the form: -->
+    <div style="text-align:center;margin-top:40px;">
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+    </div>
+  </form>
+
+  <script>
+    var currentTab = 0; // Current tab is set to be the first tab (0)
+    showTab(currentTab); // Display the current tab
+    console.log(currentTab);
+    function showTab(n) {
+      // This function will display the specified tab of the form...
+      var x = document.getElementsByClassName("tab");
+      x[n].style.display = "block";
+      //... and fix the Previous/Next buttons:
+      if (n == 0) {
+        document.getElementById("prevBtn").style.display = "none";
+      } else {
+        document.getElementById("prevBtn").style.display = "inline";
+      }
+      if (n == (x.length - 1)) {
+        document.getElementById("nextBtn").innerHTML = "Submit";
+      } else {
+        document.getElementById("nextBtn").innerHTML = "Next";
+      }
+      //... and run a function that will display the correct step indicator:
+      fixStepIndicator(n)
+    }
+
+    function nextPrev(n) {
+      // This function will figure out which tab to display
+      var x = document.getElementsByClassName("tab");
+      // Exit the function if any field in the current tab is invalid:
+      if (n == 1 && !validateForm()) return false;
+      // Hide the current tab:
+      x[currentTab].style.display = "none";
+      // Increase or decrease the current tab by 1:
+      currentTab = currentTab + n;
+      // if you have reached the end of the form...
+      if (currentTab >= x.length) {
+        // ... the form gets submitted:
+        document.getElementById("regForm").submit();
+        return false;
+      }
+      // Otherwise, display the correct tab:
+      showTab(currentTab);
+    }
+
+    function validateForm() {
+      // This function deals with validation of the form fields
+      var x, y, i, valid = true;
+      x = document.getElementsByClassName("tab");
+      y = x[currentTab].getElementsByTagName("input");
+      // A loop that checks every input field in the current tab:
+      for (i = 0; i < y.length; i++) {
+        // If a field is empty...
+
+      }
+      // If the valid status is true, mark the step as finished and valid:
+      if (valid) {
+        document.getElementsByClassName("step")[currentTab].className += " finish";
+      }
+      return valid; // return the valid status
+    }
+
+    function fixStepIndicator(n) {
+      // This function removes the "active" class of all steps...
+      var i, x = document.getElementsByClassName("step");
+      for (i = 0; i < x.length; i++) {
+        x[i].className = x[i].className.replace(" active", "");
+      }
+      //... and adds the "active" class on the current step:
+      x[n].className += " active";
+    }
+  </script>
+
+</body>
+
 </html>
+
+<!-- 
+<div class="tab"> Ethnic Background:
+    <p><input placeholder="Black" oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="American Indian or Alaskan Native" oninput="this.className = ''" name="phone"></p>
+    <p><input placeholder="Hispanic" oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="White, other than Hispanic" oninput="this.className = ''" name="phone"></p>
+    <p><input placeholder="Asian or Pacific Island " oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="Other" oninput="this.className = ''" name="phone"></p>
+  </div>
+   
+   <div class="tab">
+    <form action="/action_page.php"><b> Sweatshirt Sizes: </b>
+  <input type="radio" name="gender" value="s" checked>S
+  <input type="radio" name="gender" value="m">M
+  <input type="radio" name="gender" value="l">L
+  <input type="radio" name="gender" value="xl" checked>XL
+  <input type="radio" name="gender" value="1x">1X
+  <input type="radio" name="gender" value="2x">2X
+  <input type="radio" name="gender" value="3x">3X
+</form> 
+  </div>
+  
+  <div class="tab">
+    <form action="/action_page.php"><b> T-Shirt Sizes: </b>
+  <input type="radio" name="gender" value="s" checked>S
+  <input type="radio" name="gender" value="m">M
+  <input type="radio" name="gender" value="l">L
+  <input type="radio" name="gender" value="xl" checked>XL
+  <input type="radio" name="gender" value="1x">1X
+  <input type="radio" name="gender" value="2x">2X
+  <input type="radio" name="gender" value="3x">3X
+</form> 
+  </div>
