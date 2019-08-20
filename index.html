@@ -19,14 +19,15 @@
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
     rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/grayscale.css" rel="stylesheet">
+  <link href="css/dropdown-style.css" rel="stylesheet">
 
-</head> <!-- header ends here -->
+</head>
+<!-- header ends here -->
 <!-- --------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------- -->
@@ -45,20 +46,33 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#home">Home</a>
-            </li>
-            <a class="nav-link js-scroll-trigger" href="#about" >About</a>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+              </li>
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#newsevents">News & Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="./gallery.html">Gallery</a>
-            </li> 
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="./programs.html">Programs</a>
             </li>
+
+            <!-- -------------------------------------------- -->
+            <!-- programs dropdown begins here-->
+            <li class="nav-item dropdown programs" id="drop">
+              <a href="javascript:void(0)" class="dropbtn">Programs</a>
+              <div class="dropdown-content">
+                <a href="./edge.html">Edge Program</a>
+                <a href="./nextgen.html">Next Generation</a>
+                <a href="./members.html">Board Members</a>
+                <a href="./chapters.html">Existing Chapters</a>
+              </div>
+            </li>
+            <!-- programs dropdown ends here-->
+            <!-- -------------------------------------------- -->
+
+
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="./merchandise.html">Merchandise</a>
             </li>
@@ -107,11 +121,13 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2 class="text-white mb-4">Experience I Am My Sister's Keeper</h2>
-          <p class="text-white-50">I Am My Sister’s Keeper provides leadership development, rites of passage and entrepreneurial skills training for girls ages 12-18. 
- We focus on enhancing the emotional well-being of girls, while empowering them to build and grow a sisterhood; sustaining them a life time. 
-  These life tools will assist participants with understanding the importance of their strengths and how to positively impact their fellow sister and community.
-   MSK has been recognized by the Delaware House of Representatives and Wilmington City Council with resolutions honoring the organization and our Founder for the renowned work we do in the community, particularly on behalf of women and girls.
-     New Castle County Executive Matthew Meyer proclaimed June 1, 2019 as I Am My Sister's Keeper Day!</p>
+          <p class="text-white-50">I Am My Sister’s Keeper provides leadership development, rites of passage and entrepreneurial skills training for
+            girls ages 12-18. We focus on enhancing the emotional well-being of girls, while empowering them to build and
+            grow a sisterhood; sustaining them a life time. These life tools will assist participants with understanding
+            the importance of their strengths and how to positively impact their fellow sister and community. MSK has been
+            recognized by the Delaware House of Representatives and Wilmington City Council with resolutions honoring the
+            organization and our Founder for the renowned work we do in the community, particularly on behalf of women and
+            girls. New Castle County Executive Matthew Meyer proclaimed June 1, 2019 as I Am My Sister's Keeper Day!</p>
         </div>
       </div>
       <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
@@ -123,28 +139,19 @@
 
   <!-- News & Events Section begins here -->
   <section id="newsevents" class="projects-section bg-light">
-   <div class="container">
+    <div class="container">
 
       <!-- Featured News & Events Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0"
-            src="https://static.wixstatic.com/media/ca8bd0_70db7f27fee348f482f8f19f11a7f0ce~mv2.jpg/v1/fill/w_373,h_304,al_c,q_80,usm_0.66_1.00_0.01/MSK%20Group%20Pic.webp" height="400px"
-            width=600px alt="">
+          <img class="img-fluid mb-3 mb-lg-0" src="https://static.wixstatic.com/media/ca8bd0_70db7f27fee348f482f8f19f11a7f0ce~mv2.jpg/v1/fill/w_373,h_304,al_c,q_80,usm_0.66_1.00_0.01/MSK%20Group%20Pic.webp"
+            height="400px" width=600px alt="">
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4>MSK Information Sessions</h4>
             <p class="text-black-50 mb-0">
-Saturday, September 7th and 21st, 2019
-
-10am-12pm
-
-Parkway Academy North
-
-304 S. Harrison Street
-
-Wilmington, DE  19805</p>
+              Saturday, September 7th and 21st, 2019 10am-12pm Parkway Academy North 304 S. Harrison Street Wilmington, DE 19805</p>
           </div>
         </div>
       </div>
@@ -160,12 +167,8 @@ Wilmington, DE  19805</p>
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
                 <h4 class="text-white">MSK 4th Annual Tea Party</h4>
-                <p class="mb-0 text-white-50">Saturday,October 5, 2019
+                <p class="mb-0 text-white-50">Saturday,October 5, 2019 11am-2:00pm Location- TBA</p>
 
-11am-2:00pm
-
-Location- TBA</p>
-            
 
                 <button onclick="window.location.href = './registration1.html';" class="btn btn-primary mx-auto">Buy Now</button>
               </div>
@@ -177,58 +180,55 @@ Location- TBA</p>
       <!-- News & Events Two Row -->
       <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
-          <img class="img-fluid"
-            src="https://photoshop-kopona.com/uploads/posts/2017-12/1513670011_romantic-background.jpg" height="400px"
+          <img class="img-fluid" src="https://photoshop-kopona.com/uploads/posts/2017-12/1513670011_romantic-background.jpg" height="400px"
             width=600px alt="">
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
-        /        <h4 class="text-white">Mountains</h4>
-                <p class="mb-0 text-white-50">Another example of a project with its respective description. These
-                  sections work well responsively as well, try this theme on a small screen!</p>
+                /
+                <h4 class="text-white">Mountains</h4>
+                <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well,
+                  try this theme on a small screen!</p>
 
 
 
-                  <button onclick="window.location.href = './registration1.html';" class="btn btn-primary mx-auto">Buy Now</button>
+                <button onclick="window.location.href = './registration1.html';" class="btn btn-primary mx-auto">Buy Now</button>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-  <!-- News & Events Three Row -->
-  <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-    <div class="col-lg-6">
-      <img class="img-fluid" src="https://static.wixstatic.com/media/ca8bd0_e6d332728325422c93fcefb12a6eb73e~mv2_d_6016_4000_s_4_2.jpg/v1/crop/x_555,y_0,w_4905,h_4000/fill/w_373,h_304,al_c,q_80,usm_0.66_1.00_0.01/ca8bd0_e6d332728325422c93fcefb12a6eb73e~mv2_d_6016_4000_s_4_2.webp"
-        height="400px" width=600px alt="">
-    </div>
-    <div class="col-lg-6">
-      <div class="bg-black text-center h-100 project">
-        <div class="d-flex h-100">
-          <div class="project-text w-100 my-auto text-center text-lg-left">
-            <h4 class="text-white">MSK 4th Annual Tea Party</h4>
-            <p class="mb-0 text-white-50">Saturday,October 5, 2019
+      <!-- News & Events Three Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="https://static.wixstatic.com/media/ca8bd0_e6d332728325422c93fcefb12a6eb73e~mv2_d_6016_4000_s_4_2.jpg/v1/crop/x_555,y_0,w_4905,h_4000/fill/w_373,h_304,al_c,q_80,usm_0.66_1.00_0.01/ca8bd0_e6d332728325422c93fcefb12a6eb73e~mv2_d_6016_4000_s_4_2.webp"
+            height="400px" width=600px alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">MSK 4th Annual Tea Party</h4>
+                <p class="mb-0 text-white-50">Saturday,October 5, 2019 11am-2:00pm Location- TBA</p>
 
-11am-2:00pm
 
-Location- TBA</p>
-        
-
-            <button onclick="window.location.href = './registration1.html';" class="btn btn-primary mx-auto">Buy Now</button>
+                <button onclick="window.location.href = './registration1.html';" class="btn btn-primary mx-auto">Buy Now</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
 
-  </section> <!-- News & Events section ends here -->
+  </section>
+  <!-- News & Events section ends here -->
 
   <!-- Apply Section -->
   <section id="apply" class="signup-section">
-    
+
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
@@ -238,16 +238,17 @@ Location- TBA</p>
 
           <form class="form-inline d-flex">
             <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">-->
-         
-         
-         
-            <button onclick="window.location.href = './registration1.html';" class="btn btn-primary mx-auto">Join Now</button>
+
+
+
+          <button onclick="window.location.href = './registration1.html';" class="btn btn-primary mx-auto">Join Now</button>
           </form>
 
         </div>
       </div>
     </div>
-  </section> <!-- Apply section ends here -->
+  </section>
+  <!-- Apply section ends here -->
   <!-- ------------------------------------------------------------------------ -->
 
   <!-- ------------------------------------------------------------------------ -->
@@ -263,9 +264,7 @@ Location- TBA</p>
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Address</h4>
               <hr class="my-4">
-              <div class="small text-black-50">1500 Lancaster Avenue
-                P.O. Box 2647
-                Wilmington, DE, 19805</div>
+              <div class="small text-black-50">1500 Lancaster Avenue P.O. Box 2647 Wilmington, DE, 19805</div>
             </div>
           </div>
         </div>
@@ -311,7 +310,8 @@ Location- TBA</p>
       </div>
 
     </div>
-  </section> <!-- Contact section ends here -->
+  </section>
+  <!-- Contact section ends here -->
   <!-- ------------------------------------------------------------------------ -->
 
   <!-- ------------------------------------------------------------------------ -->
@@ -339,7 +339,7 @@ Location- TBA</p>
   <script src="vendor/jquery-easing/jquery.easing.js"></script>
 
   <!-- Custom scripts for this template -->
-  
+
 
 </body>
 <!-- --------------------------------------------------------------------------------- -->
