@@ -5,6 +5,7 @@
 .navthing {
   padding-top: 14px !important;
   padding-bottom: 16px !important;
+  color: #858283 !important;
 }
 .navcontainer {
   white-space: nowrap;
@@ -53,16 +54,15 @@
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
-    color: #ff0060
   }
   #mainNav .nav-link {
     -webkit-transition: none;
     transition: none;
     padding: 2rem 1.5rem;
-    color: #ff0060
+    color: #d580ff;
   }
   #mainNav .nav-link:hover {
-    color: #ff0060
+    color:  rgba(255, 0, 96, 0);
   }
   #mainNav .nav-link:active {
     color: white;
