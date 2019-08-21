@@ -1,3 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/app-style.css">
+</head>
+<body id=app>
+<form action="/action_page.php">
+  <div class="container" id=ap>
+    <h1> <id=reg> Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+
+    <label for="dob"><b>Date of Birth</b></label>
+    <input type="text" placeholder="Enter Date of Birth" name="dob" required>
+
+    <label for="address"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="address" required>
+
+
+  <label for="pg"><b>City:</b></label>
+  <input type="pg" id="city" placeholder="Enter City" name="city">
+  
+  <label for="pg"><b>State:</b></label>
+  <input type="pg" id="state" placeholder="Enter State" name="state">
+  
+  <label for="pg"><b>Zip:</b></label>
+  <input type="pg" id="zip" placeholder="Enter Zipcode" name="zip"><br><br>
+  
+  <label for="telp"><b>Telephone</b></label>
+    <input type="text" placeholder="Enter Telephone #" name="telp" required>
+    
+    <label for="lsa"><b>Last School Attended</b></label>
+    <input type="text" placeholder="Enter Last School Attended" name="lsa" required>
+    
+    <label for="lga"><b>Last Grade Attended</b></label>
+    <input type="text" placeholder="Enter Last Grade Attended" name="lga" required>
+    
+
+  <label for="pg"><b>Parent/Guardian<b></label>
+  <input type="pg" id="pg" placeholder="Enter Parent/Guardian" name="pg">
+  
+  <label for="text">Relationship</label>
+  <input type="rs" id="rs" placeholder="Enter Relationship" name="rs">
+  <label><br><br>
+  
+  
+    <label for="ea"><b>Email Address</b></label>
+    <input type="text" placeholder="Enter Email Address" name="ea" required>
+    <hr>
+    
+  <form action="/action_page.php">  
+  <label for="ea"><b>T-Shirt Size</b></label>
+  <input type="radio" name="gender" value="male" checked> S
+  <input type="radio" name="gender" value="female"> M
+  <input type="radio" name="gender" value="other"> L
+  <input type="radio" name="gender" value="male" checked> XL
+  <input type="radio" name="gender" value="female"> 1X
+  <input type="radio" name="gender" value="other"> 2X
+  <input type="radio" name="gender" value="other"> 3X
+  </form>
+  
+   <form action="/action_page.php">
+  <br><label for="ea"><b>Sweatshirt Size</b></label>
+  <input type="radio" name="gender" value="male" checked> S
+  <input type="radio" name="gender" value="female"> M
+  <input type="radio" name="gender" value="other"> L
+  <input type="radio" name="gender" value="male" checked> XL
+  <input type="radio" name="gender" value="female"> 1X
+  <input type="radio" name="gender" value="other"> 2X
+   <input type="radio" name="gender" value="other"> 3x
+   </form>
+   
+   <h4>Ethnic Background</h4>
+
+<form action="/action_page.php">
+<input type="checkbox" name="vehicle1" value="Bike"><b><i>Black</b></i>
+
+<input type="checkbox" name="vehicle2" value="Car"><b><i>American Indian or Alaskian Native</b></i>
+
+<input type="checkbox" name="vehicle1" value="Bike"><b><i>Hispanic</b></i>
+<br>
+<input type="checkbox" name="vehicle2" value="Car"><b><i>White other than Hispanic</b></i>
+
+<input type="checkbox" name="vehicle1" value="Bike"><b><i>Asian or Pacific Island</b></i>
+
+<input type="checkbox" name="vehicle2" value="Car"><b><i>Other</b></i>
+
+<br><br><label for="ea"><b>Employer/Volunteer/Community Service </b></label>
+<input type="text" placeholder="Enter Name" name="ea" required>
+
+<label for="pg"><b>Start Date<b></label>
+<input type="pg" id="pg" placeholder="Enter Start Date" name="pg">
+
+<label for="pg"><b>Job Title<b></label>
+<input type="pg" id="pg" placeholder="Enter Job Title" name="pg">
+
+<label for="pg"><b>End Date<b></label>
+<input type="pg" id="pg" placeholder="Enter End Date" name="pg">
+
+<br><br><label for="ea"><b>Reason</b></label>
+<input type="text" placeholder="Enter Reason" name="ea" required
+
+<br><br><label for="ea"><b>Emergency Contact Person</b></label>
+<input type="text" placeholder="Enter Name" name="ea" required>
+
+<br><br><label for="ea"><b>Address</b></label>
+<input type="text" placeholder="Enter Address" name="ea" required>
+
+<br><br><label for="ea"><b>Relationship To Participant</b></label>
+<input type="text" placeholder="Enter Relationship" name="ea" required>
+
+<label for="pg"><b>Contact Phone Number<b></label>
+<input type="pg" id="pg" placeholder="Enter Phone Number" name="pg">
+
+<label for="pg"><b>Alternate Phone Number<b></label>
+<input type="pg" id="pg" placeholder="Enter Phone Number" name="pg">
+
+<h4>Health Information</h4>
+
+
+<form action="/action_page.php">
+<p>Are you currently taking any medications?<input type="checkbox" name="vehicle1" value="Bike"><b>Yes</b>
+
+<input type="checkbox" name="vehicle2" value="Car"><b>No</b></p>
+<p> If yes, please list medication(s) 
+<input type="text" placeholder="Enter Medication(s)" name="ea" required></p>
+
+<p>Have you ever been hospitalized?<input type="checkbox" name="vehicle1" value="Bike"><b>Yes</b>
+
+<input type="checkbox" name="vehicle2" value="Car"><b>No</b></p>
+
+<p> If yes, please list reason(s) 
+<input type="text" placeholder="Enter Reason(s)" name="ea" required></p>
+
+
+<p> Are you allergic to anything?<input type="checkbox" name="vehicle1" value="Bike"><b>Yes</b>
+
+<input type="checkbox" name="vehicle2" value="Car"><b>No</b></p>
+<p> If yes, please list allergy(s) 
+<input type="text" placeholder="Enter Allergy(s)" name="ea" required></p>
+
+</form>
+
+<label for="pg"><b>Participant Signature<b></label>
+<input type="pg" id="pg" placeholder="Enter Name" name="pg">
+
+<label for="pg"><b>Date<b></label>
+<input type="pg" id="pg" placeholder="Enter Date" name="pg">
+
+<br><br><label for="pg"><b>Parent/Guardian Signature<b></label>
+<input type="pg" id="pg" placeholder="Enter Name" name="pg">
+
+<label for="pg"><b>Date<b></label>
+<input type="pg" id="pg" placeholder="Enter Date" name="pg">
+  
+  </form>
+
+<h2>Student History Form</h2>
+
+<p>Correctly completing this form will help our staff see the entire make-up of each participant applying to our program. It is
+NOT a form that will be used to deny your entrance to attend this program. Please fill this form out correctly and
+honestly.</p>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">How will you make a positive contribution to MSK and your community?</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Please list your hobbies and interests:</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">What are your strengths?</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">List three or more leadership skills you would like to develop:
+</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+    
+    <label for="pg"><b>Participant Signature<b></label>
+<input type="pg" id="pg" placeholder="Enter Name" name="pg">
+
+<label for="pg"><b>Date<b></label>
+<input type="pg" id="pg" placeholder="Enter Date" name="pg">
+
+<br><br><label for="pg"><b>Parent/Guardian Signature<b></label>
+<input type="pg" id="pg" placeholder="Enter Name" name="pg">
+
+<label for="pg"><b>Date<b></label>
+<input type="pg" id="pg" placeholder="Enter Date" name="pg">
+    </div>
+  </form>
+</div>
+
+<br><br><p class="tran">I,
+<input type="text" onfocus="this.value=''" value="" placeholder="Enter Name" name="pg"> as the parent/legal guardian/person responsible give my permission for <input type="text" onfocus="this.value=''" value=""  placeholder="Enter Child's Name'" name="pg"> to participate in all of the normal activities(academic, tutoring, vocational, field trips, workshops, etc.) of the My Sister’s Keeper Rites of Passage program. I understand that these activities will include transportation to and from the My Sister’s Keeper Rites of Passage Program workshops and field trips.I, on behalf of myself, my guests, my spouse, my children, my parents, my heirs, assigns, personal representatives, estate, and insurers, by signing below, hereby agree to release, indemnify and defend I Am My Sister’s Keeper-Rites of Passage, its trustees, employees, and agents from any liability that may arise from my son/daughter’s participation in any and all instructional activities associated with the My Sister’s Keeper Rites of Passage Program. I hereby give my consent for my daughter’s participation in the above-mentioned activities.</p>
+
+<br><br><label for="pg"><b>Signature<b></label>
+<input type="pg" id="pg" placeholder="Enter Name" name="pg">
+
+<label for="pg"><b>Date<b></label>
+<input type="pg" id="pg" placeholder="Enter Date" name="pg">
+
+<br><br><button type="submit" class="registerbtn">Submit</button>
+
+</body>
 </html>
